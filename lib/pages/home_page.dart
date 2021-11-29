@@ -73,6 +73,7 @@ class ParametersList extends StatelessWidget {
         children: [
           /// smsUrl, ok, fail, api, enabled
           TextFormField(
+            key: Key(parameters.smsUrl),
             readOnly: true,
             decoration: const InputDecoration(
               label: Text('SMS URL'),
@@ -80,6 +81,7 @@ class ParametersList extends StatelessWidget {
             initialValue: parameters.smsUrl,
           ),
           TextFormField(
+            key: Key(parameters.healthCheckUrlOk),
             readOnly: true,
             decoration: const InputDecoration(
               label: Text('Health Okay URL'),
@@ -87,6 +89,7 @@ class ParametersList extends StatelessWidget {
             initialValue: parameters.healthCheckUrlOk,
           ),
           TextFormField(
+            key: Key(parameters.healthCheckUrlFail),
             readOnly: true,
             decoration: const InputDecoration(
               label: Text('Health Fail URL'),
@@ -94,6 +97,7 @@ class ParametersList extends StatelessWidget {
             initialValue: parameters.healthCheckUrlFail,
           ),
           TextFormField(
+            key: Key(parameters.apiKey),
             readOnly: true,
             decoration: const InputDecoration(
               label: Text('API Key'),
